@@ -31,6 +31,8 @@ var scrollFns = []
 
 var activeTeam = 'FW'
 
+var lastHover
+
 var highlightScenarios = '000000000000'.split('').map(d => +d)
 var mouseover = [64, 64]
 
@@ -240,11 +242,11 @@ function drawTeam(team){
 
       var x = d3.clamp(0, Math.floor(c.x.invert(xp)), 63)
       var y = d3.clamp(0, Math.floor(c.y.invert(yp)), 63)
-
       var searchObj = {}
       searchObj[team + 'x'] = x
       searchObj[team + 'y'] = y
       var d = _.find(scenarios, searchObj)
+      lastHover = d
       
       ttSel.html([d.ogstr, d.nStr, d[team],d.str, d.x, d.y].join('<br>'))
 
@@ -259,6 +261,38 @@ function drawTeam(team){
     })
     .on('mouseout', () => {
       d3.selectAll('.underline').classed('underline', false)
+    })
+    .on('click', function(){
+      temp = [0,0,0,0,0,0,0,0,0,0,0,0]
+      disj = false
+      clicked = lastHover.games.map(w=>{return w + 1})
+
+      if (!highlightScenarios.includes(1) && !highlightScenarios.includes(2))
+        highlightScenarios = clicked
+      else{
+        clicked.forEach((a, i) => {
+          if (a != highlightScenarios[i]){
+            if(highlightScenarios[i] != 0)
+              disj = true
+          }
+          else
+            temp[i] = a
+        });
+
+        if(disj)
+          highlightScenarios = temp
+        else
+          highlightScenarios = [0,0,0,0,0,0,0,0,0,0,0,0]
+      }
+
+      scenarios.forEach(s => {
+        s.active = highlightScenarios.every((g, i) =>
+          g == 0 ? true : s.str[i] == g)
+      })
+
+      highlightFns.forEach(d => d())
+      setTimeout(update, 20)
+
     })
 }
 
@@ -344,6 +378,7 @@ function drawGames(){
   }
   updateLines()
   scrollFns.push(updateLines)
+  update = updateLines
 
   mouseoverFns.push(m => {
     teamSel.classed('underline', d => {
