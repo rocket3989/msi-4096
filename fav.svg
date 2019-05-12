@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="110.67534mm"
+   height="110.67527mm"
+   viewBox="0 0 110.67534 110.67527"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
@@ -25,17 +25,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="392.02756"
-     inkscape:cy="555.63507"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="87.510851"
+     inkscape:cy="141.92651"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="958"
-     inkscape:window-height="1008"
-     inkscape:window-x="-7"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -51,7 +55,8 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-40.019475,-77.727804)">
     <rect
        style="opacity:1;fill:#4caf50;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.092;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99494952"
        id="rect815"
@@ -65,20 +70,20 @@
        width="50"
        height="50"
        x="40.065475"
-       y="133.0654" />
+       y="138.35707" />
     <rect
        style="opacity:1;fill:#ff9800;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.092;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99494952"
        id="rect815-0"
        width="50"
        height="50"
-       x="95.357147"
+       x="100.64881"
        y="77.773811" />
     <rect
        style="opacity:1;fill:#f44336;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.092;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99494952"
        id="rect815-9-0"
        width="50"
        height="50"
-       x="95.357147"
-       y="133.0654" />
+       x="100.64881"
+       y="138.35707" />
   </g>
 </svg>

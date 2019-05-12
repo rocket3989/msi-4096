@@ -1,7 +1,7 @@
 console.clear()
 var ttSel = d3.select('body').selectAppend('div.tooltip.tooltip-hidden')
 
-var teams = 'IG G2 FW PVB SKT TL'.split(' ')
+var teams = 'IG G2 SKT TL FW PVB'.split(' ')
 
 var teamText = {
   G2: `FNC guarantees a tiebreak game with two wins.`,
@@ -175,7 +175,7 @@ function drawTeam(team){
 
     sel.append('a')
       .st({position: 'relative', top: 1050, left: 570})
-      .at({href: 'https://github.com/1wheel/roadtolarissa/blob/master/source/msi-4096/_script.js'})
+      .at({href: 'https://github.com/rocket3989/msi-4096'})
       .text('code')
 
     return;
@@ -249,7 +249,6 @@ function drawTeam(team){
       lastHover = d
       
       ttSel.html([d.ogstr, d.nStr, d[team],d.str, d.x, d.y].join('<br>'))
-
       ttSel.html('')
       ttSel.appendMany('div.team-result', teams)
         .text(d => d)

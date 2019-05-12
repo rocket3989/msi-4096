@@ -6,41 +6,35 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>The 4096 Paths Into MSI</title>
-	<meta property="og:title" content="The 4096 Paths Into MSI">
+	<title>The 4096 Ends of MSI</title>
+	<meta property="og:title" content="The 4096 Ends of MSI">
   
 	<link rel="stylesheet" type="text/css" href="./style.css">
-	<link rel="stylesheet" type="text/css" href="./style1.css">
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:700,500' rel='stylesheet' type='text/css'>  
 	<meta name="viewport" content="width=device-width">
 </head>
 <body>
   <div class='header'>
-    <div class='header-left'>
-      <a href='http://roadtolarissa.com'>roadtolarissa</a>
-    </div>
     <div class='header-right'>
-      <span>Adam Pearce</span>
-      <a href='http://github.com/1wheel'>
-        <img src='http://roadtolarissa.com/images/github.svg'></img>
-      </a>
-      <a href='http://twitter.com/adamrpearce'>
-        <img src='http://roadtolarissa.com/images/twitter.svg'></img>
-      </a>
-      <a href='mailto:1wheel@gmail.com'>
-        <img src='http://roadtolarissa.com/images/mail.svg'></img>
-      </a>
-      <a href='https://roadtolarissa.com/rss.xml'>
-        <img src='http://roadtolarissa.com/images/rss.svg'></img>
-      </a>
+      <span>Adam & Collin Pearce</span>
+      
     </div>
   </div>
   
-  <h1>The 4096 Paths Into MSI</h1>
+  <h1>The 4096 Ends of MSI</h1>
   <!-- <time>2018-05-13</time> -->
-  <p>With 12 games left, there are 4096 different ways group play at the <a href="https://www.lolesports.com/en_US/msi">League of Legends Mid-Season Invitational</a> can end.</p>
-<p>Each square in the grid represents one of those outcomes. Click a match on the left see what advancement scenarios will still be possible after the game. The bars below each match show how the result impacts the <span class='active-team'>current team’s</span> advancement scenarios; <span class='active-team team-inline'>FNC</span> fans should cheer for <span class=team-inline>KZ</span> in their game against <span class=team-inline>KVS</span>.</p>
+  <p>
+      With 12 games left, there are 2<sup>12</sup>, or 4096 different ways group play at the <a href="https://watch.na.lolesports.com/standings/msi/msi_2019/groups">League of Legends Mid-Season Invitational</a> can end. Three colors are used on the 4096 small squares to represent possible ends for a team in group stage- <span style="color:#4CAF50">green</span> for advancement, <span style="color:#FF9800">orange</span> for tiebreaker, and <span style="color:#F44336">red</span> for elimination.
+  </p>
+  <p>
+      There are 6 grids below, one for each team in the group stage - <span class=' team-inline'>IG, G2, SKT, TL, FW, PVB</span>. Each grid is divided into 16, representing the 4 games the <span class='active-team'>hovered team</span> has influence over. Notice that in most cases, there is variance within these divisions, indicating that results from games outside of the control of the <span class='active-team'>hovered team</span> could determine if they advance or not.
+  </p>
+    <p>Click a match on the left to see which advancement scenarios will still be possible after the game. The bars below each show how the result impacts the <span class='active-team'>hovered team’s</span> advancement scenarios; <span class='active-team team-inline'>FNC</span> fans should cheer for <span class=team-inline>KZ</span> in their game against <span class=team-inline>KVS</span> to improve their team's chance of advancement.
+  </p>
+  <p>
+      Click directly on a square to select the matches that lead to that specific outcome, and click on more to select the matches that lead to all the outcomes you picked. To reset the grids, click on any already selected square
+  </p>
 <div id='container'>
     <div id='games'></div>
     <div id='graph'>
