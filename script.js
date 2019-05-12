@@ -5,7 +5,7 @@ var teams = 'G2 SKT TL FW PVB IG'.split(' ')
 
 var teamText = {
   G2: `One win and G2 at least ties.`,
-  IG: `Ig does not need to play more games.`, 
+  IG: `IG does not need to play more games.`, 
   FW: `Beating SKT and PVB give FW a good shot.`,
   PVB: `A perfect run guarantees at least a tie for PVB.`,
   SKT: `SKT has the best odds if they beat TL.`,
