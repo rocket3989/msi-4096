@@ -1,15 +1,15 @@
 console.clear()
 var ttSel = d3.select('body').selectAppend('div.tooltip.tooltip-hidden')
 
-var teams = 'IG G2 SKT TL FW PVB'.split(' ')
+var teams = 'G2 SKT TL FW PVB IG'.split(' ')
 
 var teamText = {
-  G2: `FNC guarantees a tiebreak game with two wins.`,
-  IG: `RNG will advance if they win both Day 5 games.`, 
-  FW: `FW can take the next two days off.`,
-  PVB: `With a single win, KZ avoids elimination.`,
-  SKT: `With just two wins, EVS might luck into a tiebreaker.`,
-  TL: `TL could win four games and still be eliminated.`,
+  G2: `One win and G2 at least ties.`,
+  IG: `Ig does not need to play more games.`, 
+  FW: `Beating SKT and PVB give FW a good shot.`,
+  PVB: `A perfect run guarantees at least a tie for PVB.`,
+  SKT: `SKT has the best odds if they beat TL.`,
+  TL: `TL is most determined by the match vs PVB.`,
 }
 
 d3.keys(teamText).forEach(d => {
