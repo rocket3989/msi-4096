@@ -7,7 +7,7 @@ var teamText = {
   G2: `G2 has made it out of groups.`,
   IG: `IG continues to not have to play.`, 
   FW: `FW is betting on TL to lose their matches.`,
-  PVB: `PVB needs a perfect run, FW lose to IG, and TL to lose both matches.`,
+  PVB: `PVB needs a perfect run, FW beat IG, and TL to lose both matches.`,
   SKT: `SKT has advanced.`,
   TL: `Winning one game gives TL at least a tiebreaker.`,
 }
