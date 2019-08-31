@@ -4,21 +4,12 @@ var ttSel = d3.select('body').selectAppend('div.tooltip.tooltip-hidden')
 var teams = 'G2 SKT TL FW PVB IG'.split(' ')
 
 var teamText = {
-<<<<<<< HEAD
-  G2: `G2 has made it out of groups.`,
-  IG: `IG continues to not have to play.`, 
-  FW: `FW is betting on TL to lose their matches.`,
-  PVB: `PVB needs a perfect run, FW beat IG, and TL to lose both matches.`,
-  SKT: `SKT has advanced.`,
-  TL: `Winning one game gives TL at least a tiebreaker.`,
-=======
   G2: `One win and G2 at least ties.`,
   IG: `IG does not need to play more games.`, 
   FW: `Beating SKT and PVB give FW a good shot.`,
   PVB: `A perfect run guarantees at least a tie for PVB.`,
   SKT: `SKT has the best odds if they beat TL.`,
   TL: `TL is most determined by the match vs PVB.`,
->>>>>>> parent of 81bae52... 1 day left update
 }
 
 d3.keys(teamText).forEach(d => {
